@@ -73,13 +73,15 @@ nav a {
 
 .hero-text h1 {
   font-size: 4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-family: 'Playfair Display', serif;
   line-height: 1.0;
 }
 
 .hero-text p {
   font-size: 1.4rem;
+  max-width: 600px;
+  margin-bottom: 3rem;
 }
 
 .hero-image img {
