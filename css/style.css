@@ -69,10 +69,12 @@ nav a {
 .hero-text {
   flex: 1;
   max-width: 50%;
+  margin-top: 5rem;
 }
 
 .hero-text h1 {
   font-size: 4rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   font-family: 'Playfair Display', serif;
   line-height: 1.0;
@@ -214,6 +216,7 @@ footer a {
   .hero {
     padding: 7rem 30px 5rem;
     min-height: auto;
+    margin-top: -7rem;
   }
 
   .hero-image {
