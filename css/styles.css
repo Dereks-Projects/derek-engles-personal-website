@@ -431,6 +431,7 @@ section {
 .book-image img {
     margin: 0 auto;
     max-height: 300px;
+    border-radius: 8px;
 }
 
 .book-card .book-title {
@@ -646,7 +647,7 @@ section {
     
     .hero-title {
         font-size: 2rem;
-        font-weight: 700;
+        font-weight: 600;
         text-align: left;
         margin-bottom: 1rem;
     }
@@ -663,14 +664,18 @@ section {
     
     /* PREMIER SECTION - MOBILE */
     .premier-content {
-        text-align: center;
+        text-align: left;
     }
     
     .premier-title {
         font-size: 1.75rem;
-        font-weight: 700;
+        font-weight: 600;
     }
     
+    .premier-subtitle {
+        width: 90%;
+    }
+
     .premier-links {
         flex-direction: column;
         align-items: stretch;
@@ -687,8 +692,14 @@ section {
     }
     
     .portfolio-title {
-        font-size: 2.5rem;
+        font-size: 1.75rem;
         font-weight: 700;
+        text-align: left;
+    }
+
+    .portfolio-subtitle {
+        font-size: 1rem;
+        text-align: left;
     }
 
     .tech-stack img {
