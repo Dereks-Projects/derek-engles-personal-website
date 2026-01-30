@@ -397,7 +397,13 @@ section {
 .books-title {
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.books-section-subtitle {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
 }
 
 .books-grid {
@@ -726,6 +732,10 @@ section {
     .books-title {
         font-size: 2rem;
         font-weight: 700;
+    }
+
+    .books-section-subtitle {
+        text-align: left;
     }
     
     /* CTA SECTION - MOBILE */
