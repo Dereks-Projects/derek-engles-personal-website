@@ -35,6 +35,96 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/new-favicon.png">
     <link rel="apple-touch-icon" href="images/new-favicon.png">
+
+    <!-- Structured Data: Person + Organization for entity disambiguation -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://derekengles.com/#person",
+        "name": "Derek Engles",
+        "url": "https://derekengles.com",
+        "image": "https://derekengles.com/images/founder_image.png",
+        "jobTitle": "Founder & CEO",
+        "description": "Hospitality executive, sommelier, author, and technology developer with 20+ years of experience at luxury properties including Wynn Las Vegas and MGM Grand.",
+        "worksFor": {
+          "@id": "https://derekengles.com/#organization"
+        },
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Harvard Business School"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Northwestern University"
+          }
+        ],
+        "knowsAbout": [
+          "Wine Education",
+          "Sommelier Training",
+          "Hospitality Management",
+          "Restaurant Operations",
+          "Beverage Program Development",
+          "Full-Stack Web Development"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/derekengles/",
+          "https://github.com/Dereks-Projects",
+          "https://www.somm.site",
+          "https://www.beverage.fyi",
+          "https://www.somm.tips",
+          "https://www.restaurantstandards.com",
+          "https://www.hospitality.fyi",
+          "https://informativemedia.com"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://derekengles.com/#organization",
+        "name": "Informative Media",
+        "url": "https://informativemedia.com",
+        "founder": {
+          "@id": "https://derekengles.com/#person"
+        },
+        "description": "A portfolio of hospitality and beverage education platforms founded by Derek Engles.",
+        "owns": [
+          {
+            "@type": "WebSite",
+            "name": "Somm.Site",
+            "url": "https://www.somm.site",
+            "description": "Comprehensive wine education platform"
+          },
+          {
+            "@type": "WebSite",
+            "name": "Beverage.fyi",
+            "url": "https://www.beverage.fyi",
+            "description": "Beverage industry education and articles"
+          },
+          {
+            "@type": "WebSite",
+            "name": "Somm.Tips",
+            "url": "https://www.somm.tips",
+            "description": "Wine tips and quick-reference guides"
+          },
+          {
+            "@type": "WebSite",
+            "name": "Restaurant Standards",
+            "url": "https://www.restaurantstandards.com",
+            "description": "Hospitality training and operational standards"
+          },
+          {
+            "@type": "WebSite",
+            "name": "Hospitality.fyi",
+            "url": "https://www.hospitality.fyi",
+            "description": "Hospitality industry education and resources"
+          }
+        ]
+      }
+    ]
+    </script>
 </head>
 <body>
     <!-- Header Section -->
@@ -99,6 +189,19 @@
                         <li>Educational platforms and training systems</li>
                         <li>Content creation and digital marketing strategies</li>
                     </ul>
+
+                    <p>
+                        As the founder of Informative Media, I have built and currently operate five 
+                        hospitality and beverage education platforms: 
+                        <a href="https://www.somm.site" target="_blank">Somm.Site</a>, 
+                        <a href="https://www.beverage.fyi" target="_blank">Beverage.fyi</a>, 
+                        <a href="https://www.somm.tips" target="_blank">Somm.Tips</a>, 
+                        <a href="https://www.restaurantstandards.com" target="_blank">RestaurantStandards.com</a>, and 
+                        <a href="https://www.hospitality.fyi" target="_blank">Hospitality.fyi</a>. 
+                        Each platform serves a distinct audience within the hospitality industry, 
+                        from wine education and sommelier training to operational standards and 
+                        service excellence.
+                    </p>
                     
                     <h2>My Approach</h2>
                     <p>
@@ -145,7 +248,7 @@
                             I'm always interested in new projects and opportunities to create 
                             innovative solutions.
                         </p>
-                        <a href="mailto:derekengles@gmail.com" class="btn btn-primary">Get In Touch</a>
+                        <a href="/cdn-cgi/l/email-protection#99fdfcebfcf2fcf7fef5fcead9fef4f8f0f5b7faf6f4" class="btn btn-primary">Get In Touch</a>
                     </div>
                 </div>
             </div>
@@ -206,7 +309,7 @@
                     </div>
                     
                     <p class="footer-copyright-desktop">
-                        Copyright 2025 All Rights Reserved
+                        Copyright 2026 All Rights Reserved
                     </p>
                 </div>
                 
@@ -229,7 +332,7 @@
                         <li><a href="https://www.restaurantstandards.com" target="_blank">Restaurant Standards</a></li>
                         <li><a href="https://www.somm.site" target="_blank">Somm.Site</a></li>
                         <li><a href="https://www.somm.tips" target="_blank">Somm.Tips</a></li>
-                        
+                        <li><a href="https://www.hospitality.fyi" target="_blank">Hospitality.fyi</a></li>
                     </ul>
                 </div>
                 
@@ -245,13 +348,11 @@
                 
                 <!-- Mobile only copyright - appears after all columns -->
                 <p class="footer-copyright-mobile">
-                    Copyright 2025 All Rights Reserved
+                    Copyright 2026 All Rights Reserved
                 </p>
             </div>
         </div>
     </footer>
 
     <!-- JavaScript -->
-    <script src="js/main.js"></script>
-</body>
-</html>
+    <script
