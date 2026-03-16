@@ -1,0 +1,61 @@
+# Cursor Rules: derekengles.com
+
+## Project Overview
+
+This is the personal brand website for Derek Engles, founder of Informative Media. It is a static site with no build step, no framework, and no bundler. It ships raw HTML, CSS, and JavaScript directly to Vercel.
+
+The site is live at https://www.derekengles.com.
+
+Official contact email: derek@informativemedia.com
+
+## Architecture
+
+- Two pages: `index.html` (homepage) and `about.html` (about page)
+- Two stylesheets: `css/styles.css` (main, all homepage sections) and `css/about.css` (about page only)
+- One script: `js/main.js` (smooth scroll, header scroll effect, copyright year)
+- All images live in `images/`
+- Configuration files at root: `robots.txt`, `sitemap.xml`, `vercel.json`
+- No package.json, no node_modules, no build commands
+
+## Tech Constraints
+
+- Vanilla HTML5, CSS3, and JavaScript only. No frameworks. No Tailwind. No Sass. No TypeScript.
+- CSS uses custom properties defined in `:root` in `css/styles.css`. Always use the existing variables rather than hardcoding hex values.
+- No inline styles. All styling goes in the appropriate CSS file.
+- Mobile-first is the preferred approach. The hero section already uses `min-width` media queries. The remaining sections currently use `max-width` (desktop-first) queries. When writing new sections, use `min-width` (mobile-first) to align with the hero pattern.
+- Breakpoints: 768px (tablet), 1025px (desktop).
+- Fonts are loaded via Google Fonts in the HTML `<head>`. Playfair Display is for headings. Open Sans is for body text.
+
+## Coding Standards
+
+- Write production-grade code. No shortcuts, no band-aids, no "quick fixes."
+- HTML must be semantic: use appropriate elements (`section`, `article`, `nav`, `header`, `footer`, `main`) rather than generic `div` wrappers.
+- CSS follows BEM-adjacent naming (`.section-title`, `.card-image`, `.hero-buttons`). Match the existing naming conventions.
+- Keep the stylesheet table of contents in `css/styles.css` updated when adding new sections.
+- JavaScript should be vanilla, modular (each feature in its own function), and initialized from the `DOMContentLoaded` listener.
+- Do not introduce dependencies, npm packages, or CDN scripts without explicit approval.
+
+## Writing Style
+
+- Never use em dashes.
+- American English, not British English.
+- No bold or italic emphasis in paragraph text within HTML content.
+- Academic but accessible tone for any copy.
+
+## Known Issues
+
+These exist in the current codebase and should be addressed when working in the relevant files:
+
+1. `css/styles.css`, line 26: A leftover comment reads `/* TEMPORARY DEBUG - REMOVE AFTER FINDING ISSUE */` with no corresponding debug code. Remove it.
+2. `css/styles.css`, line 37: `--font-primary` is set to `'Open Sans', serif` but it is used for `h1, h2, h3` on line 81. The about page explicitly sets headings to `'Playfair Display', serif`. This variable should likely be `'Playfair Display', serif` to match the intended design system. Confirm before changing.
+3. `css/styles.css`, line 37: The fallback on `--font-primary` is `serif` while `--font-secondary` uses `sans-serif`. If `--font-primary` is corrected to Playfair Display, `serif` is the correct fallback. If it stays as Open Sans, the fallback should be `sans-serif`.
+
+## Deployment
+
+- Hosted on Vercel. Pushes to main branch auto-deploy.
+- Domain managed through GoDaddy DNS.
+- No build command required. Vercel serves the static files directly.
+
+## Parent Company
+
+This site is part of the Informative Media portfolio (https://www.informativemedia.com). Other portfolio sites include somm.site, somm.tips, restaurantstandards.com, beverage.fyi, hospitality.fyi, and cuisine.fyi (in production). Do not reference backbar.fyi anywhere as it has been retired.
